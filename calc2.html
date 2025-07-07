@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Simple Calculator</title>
+        <link rel="stylesheet" href="resource/style.css">
+    </head>
+    <body>
+        <div class="calculator" id="calculator-container">
+            <a href="index.html" class="home-button">HOME</a>
+            <div class="input-container">
+                <input type="text" id="display" readonly onkeydown="calculatorUI.handleKeyPress(event)">
+                <div class="additional-buttons">
+                    <button onclick="calculatorUI.backspace()">⌫</button>
+                    <button onclick="calculatorUI.clearDisplay()">AC</button>
+                </div>
+            </div>
+            <div class="keys" id="calculator-keys">
+                <!-- Buttons will be dynamically added here -->
+            </div>
+        </div>
+
+        <script src="calculator2.js"></script>
+    </body>
+</html>

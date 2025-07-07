@@ -1,0 +1,158 @@
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url('bg1.jpeg');
+        }
+
+        .title {
+            text-align: center;
+            color: black;
+            margin: 30px;
+            padding: 10px;
+            text-shadow: 2px 5px 5px grey; 
+        }
+
+        .calculator-options {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .calculator-option {
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px grey;
+            background-color: #ffffff;
+            transition: transform 0.3s ease-in-out;
+            cursor: pointer;
+            text-align: center;
+            margin: 10px;
+            text-decoration: none;
+            color: #000;
+        }
+
+        .calculator-option:hover {
+            transform: scale(1.05);
+            color: #000;
+            box-shadow: 0 0 10px black;
+        }
+
+        /* Background colors for each option */
+        #option-1 {
+            background-color: #ffcc66;
+        }
+
+        #option-2 {
+            background-color: #66ccff;
+        }
+
+        #option-3 {
+            background-color: #ff6666;
+}
+
+        .title-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .title {
+            margin: 0; /* Remove the top margin */
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between; /* Space buttons horizontally */
+        }
+
+        .calculator {
+                width: 50%;
+                background-color: #f3f3f3;
+                border-radius: 5px;
+                padding: 10px;
+                text-align: center;
+                box-shadow: 0 0 10px grey;
+            }
+
+            input[type="text"] {
+                padding: 10px;
+                font-size: 20px;
+                flex: 1
+            }
+            .input-container {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+            }
+
+            .additional-buttons {
+                display: flex;
+                gap: 5px;
+                padding: 10px; 
+                color: #ff6666;
+            }
+
+            .additional-buttons button{
+                background-color: #ff0303;
+                color: white;
+            }
+
+            .additional-buttons button:hover{
+                background-color: #c40202;
+                color: white;
+            }
+
+            .keys {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 5px;
+            }
+
+            button {
+                padding: 10px;
+                font-size: 18px;
+                border: none;
+                cursor: pointer;
+                background-color: #dcdcdc;
+                border-radius: 10px;
+            }
+
+            button:hover {
+                background-color: #b8b8b8;
+            }
+
+            .operation{
+                background-color: #ffcc66;
+                color: white;
+            }
+
+            .operation:hover {
+                background-color: #f5af27; 
+            }
+
+            .home-button {
+                background-color: #4CAF50;
+                box-shadow: 0 0 10px grey;
+                border: none;
+                color: white;
+                padding: 10px 20px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: transform 0.1s ease-in-out;
+            }
+
+            .home-button:hover{
+                box-shadow: 0 0 10px black;
+                transform: scale(1.05);
+                color: white;
+            }
